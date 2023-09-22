@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CategoryFragment"
+    android:background="@drawable/gradient1">
+
+    <!-- Parent LinearLayout -->
+    <LinearLayout
+        android:id="@+id/parentLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Linear Layout -->
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/skyblue1">
+            <EditText
+                android:id="@+id/searchEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/search"
+                android:drawableLeft="@drawable/baseline_search_24"
+                android:hint=" Search for raw fish..."
+                android:textColor="@color/black"
+                android:autofillHints="search"
+                android:padding="16dp" />
+        </LinearLayout>
+
+        <!-- Frame Layout (Inside the Parent LinearLayout) -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <!-- Image View -->
+            <ImageView
+                android:id="@+id/myImage1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/vc1modified"
+                android:scaleType="fitXY" />
+
+            <!-- Text View (Left Bottom Corner) -->
+            <TextView
+                android:id="@+id/bottomLeftTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expand All"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+               android:layout_marginStart="17dp"
+                android:padding="8dp"
+                android:layout_gravity="bottom|start" />
+        </FrameLayout>
+
+        <!-- Add other views to the parent LinearLayout if needed -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <!-- Image View -->
+            <ImageView
+                android:id="@+id/myImage2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/vc2modified"
+                android:scaleType="fitXY" />
+
+            <!-- Text View (Left Bottom Corner) -->
+            <TextView
+                android:id="@+id/bottomLeftTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expand All"
+                android:textStyle="bold"
+
+                android:textColor="@color/black"
+                android:layout_marginStart="17dp"
+                android:padding="8dp"
+                android:layout_gravity="bottom|start" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <!-- Image View -->
+            <ImageView
+                android:id="@+id/myImage3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/vc3modified"
+                android:scaleType="fitXY" />
+
+            <!-- Text View (Left Bottom Corner) -->
+            <TextView
+                android:id="@+id/bottomLeftTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expand All"
+                android:textStyle="bold"
+
+                android:textColor="@color/black"
+                android:layout_marginStart="17dp"
+                android:padding="8dp"
+                android:layout_gravity="bottom|start" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
