@@ -43,4 +43,8 @@ dependencies {
 
     //fragment
     implementation("androidx.navigation:navigation-fragment:2.3.5")
+
+    //
+    implementation 'com.airbnb.android:lottie:4.1.0'
+
 }
